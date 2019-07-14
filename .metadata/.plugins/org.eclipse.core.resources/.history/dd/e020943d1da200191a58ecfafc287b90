@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import= "java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%!
+int player = 0;
+ArrayList<String> total = new ArrayList<String>();
+
+%>
+
+<% 
+ArrayList <String> arr = new ArrayList<String>();
+arr.add("사냥꾼");
+arr.add("사제");
+arr.add("도적");
+arr.add("전사");
+
+int index = (int)(Math.random()*4);
+String role = arr.get(index);
+total.add(role);
+
+%>
+
+
+현재 맡은 역할은 [ <%=role %> ]입니다.
+<hr></hr>
+현재 <%= total.size()  %> 명 참가 중...
+<hr></hr>
+<%=total.toString() %>
+
+</body>
+</html>

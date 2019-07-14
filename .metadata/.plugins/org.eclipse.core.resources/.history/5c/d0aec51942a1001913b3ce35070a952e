@@ -1,0 +1,56 @@
+package backjoon;
+import java.util.*;
+public class Q_2448_별11 {
+
+	//가장 작은 단위의 삼각형 그리기 
+	public ArrayList <String> base_star() {
+		ArrayList <String> bs = new ArrayList<String>();
+		for(int i=0; i<3;i++) {
+			if(i == 0) {
+				bs.add(i,"  *  ");
+			}else if(i == 1) {
+				bs.add(i," * * ");
+			}else if(i ==2 ) {
+				bs.add(i,"*****");
+			}
+		}
+		return bs;
+	}
+	
+	
+	public static void main(String[] args) {
+		ArrayList <String> s_arr = new ArrayList<String>();
+		Q_2448_별11 a = new Q_2448_별11();
+		Scanner sc = new Scanner(System.in);
+		
+		s_arr = a.base_star();
+		System.out.print("input N (3,6,12,18,24,30): ");
+		int N = sc.nextInt();
+		int m = N/3;
+		double k = Math.log10(m)/Math.log10(2);
+		System.out.println("k : " + k);
+		
+		for(int j=0; j< s_arr.size();j++) {
+			System.out.println(s_arr.get(j));
+		}
+		
+		s_arr.add("  *  ");
+		s_arr.add(" * * ");
+		s_arr.add("*****");
+		System.out.println(s_arr.size());
+		for(int j=0; j< s_arr.size();j++) {
+			if(j == 0) {
+				System.out.println(s_arr.get(0) +" " +s_arr.get(3));
+			}else if(j==1) {
+				System.out.println(s_arr.get(1) + " "+s_arr.get(4) );
+			}else if(j==2) {
+				System.out.println(s_arr.get(2) +" "+ s_arr.get(5));
+			}
+			
+		}
+		sc.close();
+		
+		
+	}
+
+}

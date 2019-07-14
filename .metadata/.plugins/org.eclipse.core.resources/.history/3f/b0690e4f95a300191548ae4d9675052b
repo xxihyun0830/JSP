@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>가입창_내가 하는 실습</title>
+</head>
+<body>
+<h2>회원가입</h2>
+<tr>
+<form action = "JoinOK.java" method = "get">
+이름 : <input type = "text" name = "name" >
+ID : <input type = "text" name = "id">
+PW : <input type = "password" name = "pw">
+취미 : <input type = "checkbox" name = "hobby"> 독서 
+      <input type = "checkbox" name = "hobby"> 요리
+      <input type = "checkbox" name = "hobby"> 조깅 
+      <input type = "checkbox" name = "hobby"> 수영 
+전공 : <input type = "radio" name = "major"> 데이터
+      <input type = "radio" name = "major"> 응용
+      <input type = "radio" name = "major"> 디자인
+      <input type = "radio" name = "major"> 통계
+지역 : <select>
+      <input type = "text" name = "region"> 서울
+      <input type = "text" name = "region"> 대구
+      <input type = "text" name = "region"> 대전
+      <input type = "text" name = "region"> 부산
+
+</select>
+</form>
+
+</body>
+</html>

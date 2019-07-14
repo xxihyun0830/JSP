@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<% String authcode = request.getParameter(authcode); 
+   String code = request.getParameter(code);
+   %>    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>concert_auth_check</title>
+</head>
+<body>
+<% if (authcode.equals(code)){ %>
+    <input type = "submit" value ="인증에 성공했습니다."> 
+<%}else{%>
+  <form action = "concert_check.jsp" method = "get" > </form>
+  
+	
+<% }%>
+
+
+
+</body>
+</html>

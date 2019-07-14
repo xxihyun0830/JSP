@@ -1,0 +1,54 @@
+package backjoon;
+import java.util.*;
+public class Q_2448_별11 {
+
+	//가장 작은 단위의 삼각형 그리기 
+	// 띄어쓰기를 잘 이용하면 된다.재귀보다는 for문 이용
+	public ArrayList <String> base_star() {
+		ArrayList <String> bs = new ArrayList<String>();
+		for(int i=0; i<3;i++) {
+			if(i == 0) {
+				bs.add(i,"  *  ");
+			}else if(i == 1) {
+				bs.add(i," * * ");
+			}else if(i ==2 ) {
+				bs.add(i,"*****");
+			}
+		}
+		return bs;
+	}
+	public ArrayList<String> re_bs(ArrayList<String> bs, int n){
+		ArrayList<String> re = new ArrayList<String>();
+		while (n != 0) {
+			for(int i=0; i< bs.size(); i++) {
+				re.add(bs.get(i));
+			}
+			n--;
+		}
+		return re;
+	}
+	
+	
+	public static void main(String[] args) {
+		ArrayList <String> s_arr = new ArrayList<String>();
+		Q_2448_별11 a = new Q_2448_별11();
+		Scanner sc = new Scanner(System.in);
+		
+		s_arr = a.base_star();
+		
+		System.out.print("input N (3,6,12,18,24,30): ");
+		int N = sc.nextInt();
+		int m = N/3;
+		double k = Math.log10(m)/Math.log10(2);
+		System.out.println("k : " + k);
+		
+		for(int j=0; j< s_arr.size();j++) {
+			System.out.println(s_arr.get(j));
+		}
+		
+		sc.close();
+		
+		
+	}
+
+}

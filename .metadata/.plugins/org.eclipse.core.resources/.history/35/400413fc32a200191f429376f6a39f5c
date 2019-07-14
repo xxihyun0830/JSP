@@ -1,0 +1,14 @@
+package backjoon;
+import java.util.*;
+import java.io.*;
+
+public class pp {
+	
+	public static void main(String[] args) {
+		BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
+		
+		
+		
+	}	
+
+}
