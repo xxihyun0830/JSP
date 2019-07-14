@@ -71,14 +71,11 @@ public class ex_joinOk extends HttpServlet {
 		// 주소에 정보가 묻어나오지 않음!
 		  System.out.println("doPost 호출!! ");
 		  
-		  request.setCharacterEncoding("utf-8"); //서버에서 한글 처리
-		  
-		  String name = request.getParameter("Name"); 
-		  String id =request.getParameter("Id"); 
-		  String pw = request.getParameter("Pw"); 
-		  String [] hobbies = request.getParameterValues("Hobby"); 
-		  String major =request.getParameter("Major"); 
-		  String region =request.getParameter("Region");
+		  String name = request.getParameter("Name"); String id =
+		  request.getParameter("Id"); String pw = request.getParameter("Pw"); String []
+		  hobbies = request.getParameterValues("Hobby"); String major =
+		  request.getParameter("Major"); String region =
+		  request.getParameter("Region");
 		  
 		  response.setContentType("text/html; charset=utf-8");
 		  PrintWriter out = response.getWriter();

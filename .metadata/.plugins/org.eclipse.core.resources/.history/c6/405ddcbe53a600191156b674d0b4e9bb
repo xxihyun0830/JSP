@@ -10,7 +10,7 @@
 <h1>회원가입</h1>
 <hr>
 
-<form action = "ex_joinOk" method = "post">
+<form action = "ex_joinOk" method = "get">
 이름: <input type = "text" name = "Name" size = "10"> <br>
 ID: <input type = "text" name = "Id" size = "10"> <br>
 PW: <input type = "password" name = "Pw" size = "20"> <br>
