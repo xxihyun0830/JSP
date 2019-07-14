@@ -120,3 +120,6 @@
 0:0:0:0:0:0:0:1 - - [15/Jul/2019:03:14:54 +0900] "GET /03_JSPTag/ex_directive_include.jsp HTTP/1.1" 200 485
 0:0:0:0:0:0:0:1 - - [15/Jul/2019:03:14:55 +0900] "GET /03_JSPTag/ex_directive_include.jsp HTTP/1.1" 200 485
 0:0:0:0:0:0:0:1 - - [15/Jul/2019:03:14:55 +0900] "GET /03_JSPTag/ex_directive_include.jsp HTTP/1.1" 200 485
+127.0.0.1 - - [15/Jul/2019:03:17:26 +0900] "GET / HTTP/1.1" 404 1099
+0:0:0:0:0:0:0:1 - - [15/Jul/2019:03:17:28 +0900] "GET /03_JSPTag/ex_comment.jsp HTTP/1.1" 200 154
+0:0:0:0:0:0:0:1 - - [15/Jul/2019:03:18:13 +0900] "GET /03_JSPTag/ex_comment.jsp HTTP/1.1" 200 186
