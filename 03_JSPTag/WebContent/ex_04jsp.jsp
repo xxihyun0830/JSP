@@ -1,41 +1,44 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR" import = "java.util.*" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8" import = "java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>³»°¡ ÇÏ´Â--°ÔÀÓÄ³¸¯ÅÍ </title>
+<meta charset="utf-8">
+<title>ë‚´ê°€ í•˜ëŠ”--ê²Œìž„ìºë¦­í„° </title>
 </head>
 <body>
-<h1>´ç½ÅÀÇ ¿ªÇÒ</h1>
+<h1>ë‹¹ì‹ ì˜ ì—­í• </h1>
 <br>
 
-<%! String [] role = {"¸¶¹ý»ç","°Ë»ç","Àü»ç","µµµÏ","±â°èÀÎ°£"};
-    ArrayList<String> list = new ArrayList<String>();
-    int player = 0;
-   %>
+<%! 
+  ArrayList<String> list = new ArrayList<String>();
+%>
 
 <% int rr = (int)(Math.random()*5);
-   list.add(role[rr]);
+   String [] role = {"ë§ˆë²•ì‚¬","ê²€ì‚¬","ì „ì‚¬","ë„ë‘‘","ê¸°ê³„ì¸ê°„"};
+   String chosenrole = role[rr];
+   list.add(chosenrole);
+   int player = 0;
+%>
 
-   %>
 <p>
-´ç½Å¿¡°Ô ºÎ¿©µÈ ¿ªÇÒÀº [ <%= role[rr] %> ] ÀÔ´Ï´Ù.<br>
+ë‹¹ì‹ ì—ê²Œ ë¶€ì—¬ëœ ì—­í• ì€ [ <%= chosenrole %> ] ìž…ë‹ˆë‹¤.<br>
 
-<%   
-for(int i = 0;i< list.size();i++){
-	if(role[rr].equals(list.get(i))){
+<%
+//pythonìœ¼ë¡œ ì¹˜ë©´ for i in listì™€ ê°™ë‹¤!! ìžì£¼ ì¨ë¨¹ì„ ë“¯
+for(String e: list){
+	if(chosenrole.equals(e)){
 		   player++;
-	   }
+	}
 }
  %>
-ÇöÀç ±×·ì¿¡ ´ç½Å°ú °°Àº ¿ªÇÒÀ» °¡Áø ÇÃ·¹ÀÌ¾î´Â [<%=player %>]¸í ÀÔ´Ï´Ù.
+í˜„ìž¬ ê·¸ë£¹ì— ë‹¹ì‹ ê³¼ ê°™ì€ ì—­í• ì„ ê°€ì§„ í”Œë ˆì´ì–´ëŠ” [<%=player %>]ëª… ìž…ë‹ˆë‹¤.
 </p>
 
 <p>
-ÇöÀç ±×·ì ±¸¼º
+í˜„ìž¬ ê·¸ë£¹ êµ¬ì„±
 <%= list.toString() %><br>
-<%= list.size() %>¸í Âü°¡ Áß...
+<%= list.size() %>ëª… ì°¸ê°€ ì¤‘...
 </p>
 
 </body>

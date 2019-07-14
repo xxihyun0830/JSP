@@ -56,3 +56,15 @@
 7월 15, 2019 02:01:48.17 [15640:8812:0715/020148.173:ERROR:browser_process_sub_thread.cc(221)] Waited 32 ms for network service
 7월 15, 2019 02:01:48.25 
 7월 15, 2019 02:01:48.25 KLIB_SelfTest return : KLR_OK
+7월 15, 2019 04:33:57.41 [9212:10936:0715/043357.410:ERROR:http_bridge.cc(110)] NOT IMPLEMENTED
+7월 15, 2019 04:33:57.54 [9212:10588:0715/043357.544:ERROR:browser_process_sub_thread.cc(221)] Waited 43 ms for network service
+7월 15, 2019 04:33:57.59 
+7월 15, 2019 04:33:57.59 KLIB_SelfTest return : KLR_OK
+7월 15, 2019 04:34:28.85 [10692:14660:0715/043428.858:ERROR:http_bridge.cc(110)] NOT IMPLEMENTED
+7월 15, 2019 04:34:28.98 [10692:3060:0715/043428.985:ERROR:browser_process_sub_thread.cc(221)] Waited 40 ms for network service
+7월 15, 2019 04:34:29.05 
+7월 15, 2019 04:34:29.05 KLIB_SelfTest return : KLR_OK
+7월 15, 2019 04:37:59.61 [6296:12788:0715/043759.615:ERROR:http_bridge.cc(110)] NOT IMPLEMENTED
+7월 15, 2019 04:37:59.72 [6296:10316:0715/043759.728:ERROR:browser_process_sub_thread.cc(221)] Waited 40 ms for network service
+7월 15, 2019 04:37:59.78 
+7월 15, 2019 04:37:59.78 KLIB_SelfTest return : KLR_OK
