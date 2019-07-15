@@ -9,6 +9,8 @@ C:\Users\USER\Desktop\2019_07_JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\js
 \FirstWeb\src
 C:\Users\USER\Desktop\2019_07_JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3161271589.index
 \Day3_getpost\src
+C:\Users\USER\Desktop\2019_07_JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1521601836.index
+\04_JSPObject\src
 C:\Users\USER\Desktop\2019_07_JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1586033746.index
 \Day3_getpost\src
 C:\Users\USER\Desktop\2019_07_JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2269140481.index
