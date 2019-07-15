@@ -3,13 +3,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style >
+ .login_btn {
+             width: 60px;
+             height: 50px;
+             background-color: lightblue;
+             }
+
+</style>
 <meta charset="utf-8">
-<title> 내가 하지로올ㅇㄹ나멀ㅇ;ㅣ마ㅓㄴㅇㄹ</title>
+<title> 이거 꼭 다시 해보기 2019/07/15</title>
 </head>
 <body>
-<p align = "center">
-   <h2> sendRedirect 로그인하는 페이지를 만들어 보자</h2>
-</p>
+  <div align = "center">
+     <h2> sendRedirect 로그인하는 페이지를 만들어 보자</h2>
+     <hr>
+     <br>
+     
+     <form action = "res_login_check.jsp" method = "post">
+       <table border="1" cellpadding = "0" cellspacing = "0">
+         <tr>
+           <td>
+             <input type = "text" name = "id" size = "10" placeholder = "아이디">
+           </td>
+           <td rowspan = "2">
+             <input type = "submit" value = "LOGIN" class = "login_btn">
+           </td>
+         </tr>
+         <tr>
+           <td>
+             <input type = "password" name = "pw" size = "10" placeholder = "password">
+            </td>
+          </tr>
+       
+       </table>
+
+     </form>
+   </div>
 
 <!-- html 테이블 만들기
 
@@ -48,24 +78,6 @@
 
 </table>
  -->
- 
-<hr>
-<form action = "res_join_welcome.jsp">
-
-<table border = "1" align = "center" width = "300" height = "50" >
-<tr align = "center"> 
-  <td > 아이디 </td>
-  <td rowspan="2" bgcolor="pink"> Ok </td>
-</tr>
-
-<tr align = "center"> 
-  <td> 비밀번호 </td>  
-</tr>
-
-</table>
-
-</form>
-
 
 </body>
 </html>

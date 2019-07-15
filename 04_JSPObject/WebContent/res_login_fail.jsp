@@ -8,7 +8,8 @@
 </head>
 <body>
 
+<h1> 로그인 실패 !!</h1>
 
-
+<a href = "res_login.jsp"> 다시 로그인하기 </a>
 </body>
 </html>
