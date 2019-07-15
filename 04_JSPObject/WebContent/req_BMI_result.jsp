@@ -5,6 +5,9 @@
    
    double he = Double.valueOf(h);
    double we = Double.valueOf(w);
+   //double weight = Double.parseDouble(request.getParameter("weight"));
+   // double height = Double.parseDouble(h);
+   
    double bmi = we / (he/100 * he/100);
    double res = Math.floor(bmi);
   
