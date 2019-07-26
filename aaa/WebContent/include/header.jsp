@@ -14,27 +14,27 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-                <a class="navbar-brand" href="/lovelyz">Lovelyz World</a>
+                <a class="navbar-brand" href="/lovelyz">BigBang World</a>
             </div>
            
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                 	
                     <li>
-                        <a href="/vipvipvip">HOME</a>
+                        <a href="/aaa">HOME</a>
                     </li>
                     <li>
-                        <a href="/vipvipvip/member/member.jsp">Member</a>
+                        <a href="/aaa/member/member.jsp">Member</a>
                     </li>
                     <li>
-                        <a href="/vipvipvip">BOARD</a>
+                        <a href="/aaa/board/board_list.jsp">BOARD</a>
                     </li>
                     <li>
-                        <a href="/vipvipvip">LOGIN</a>
+                        <a href="/aaa/login_members/login_form.jsp">LOGIN</a>
                         
                     </li>
                     <li>
-                        <a href="/vipvipvip/joinmembers/join_form.jsp" style="color:red">JOIN</a>
+                        <a href="/aaa/joinmembers/join_form.jsp" style="color:red"> 회원가입 </a>
                     </li>
                 </ul>
             </div>

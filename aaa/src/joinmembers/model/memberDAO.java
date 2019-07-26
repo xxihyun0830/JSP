@@ -1,7 +1,9 @@
 package joinmembers.model;
+
 import java.sql.*;
 import util.ConnProvider;
 import util.JdbcUtil;
+
 public class memberDAO {
 	
 	private static memberDAO instance = new memberDAO();
@@ -14,7 +16,7 @@ public class memberDAO {
 	public static final int MEMBER_NONEXISTANCE = 0;
 	public static final int JOIN_SUCCESS = 1;
 	public static final int JOIN_FAIL = 0;
-	public static final int LOGIN_SUCESS = 1;
+	public static final int LOGIN_SUCCESS = 1;
 	public static final int LOGIN_FAIL_PW = 0;
 	public static final int LOGIN_FAIL_ID = -1;
 	/*
@@ -52,8 +54,7 @@ public class memberDAO {
 		int regNum = 0;
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		
-		String sql = "insert into members (id, pw, name, email) values (?,?,?,?)";
+		String sql = "insert into members (id, pw, name, email,rDate) values (?,?,?,?,?)";
 		
 		try {
 			
@@ -64,6 +65,8 @@ public class memberDAO {
 			pstmt.setString(2, vo.getPw());
 			pstmt.setString(3, vo.getName());
 			pstmt.setString(4, vo.getEmail());
+			pstmt.setTimestamp(5, new Timestamp(System.currentTimeMillis()));
+			 //MySQL에 member조회 시, 해당 아이디가 생성된 시간 뜸.
 			
 			int i = pstmt.executeUpdate();
 			
@@ -118,5 +121,42 @@ public class memberDAO {
 		
 		
 	}
+	
+	public int confirmLogin(String id, String pw) {
+		int regNum = 0;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String sql = "select pw from members where id = ?";
+	      
+	      try {
+	         conn = ConnProvider.getConnection();
+	         pstmt = conn.prepareStatement(sql);
+	         
+	         pstmt.setString(1, id);
+	         rs = pstmt.executeQuery();
+	         
+	         if(rs.next()) {
+	            if(rs.getString(1).equals(pw)) {
+	               regNum = memberDAO.LOGIN_SUCCESS;
+	            } else {
+	               regNum = memberDAO.LOGIN_FAIL_PW;
+	            }
+	         } else {
+	            regNum = memberDAO.LOGIN_FAIL_ID;
+	         }
+	      }catch(Exception e) {
+				e.printStackTrace();
+		  }finally {
+				JdbcUtil.close(conn);
+				JdbcUtil.close(pstmt);
+				JdbcUtil.close(rs);
+		  }
+		  return regNum;
+		
+	}
+	
+	
+	
 
 }

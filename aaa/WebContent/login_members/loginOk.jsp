@@ -16,39 +16,35 @@
 <!--  controller 에서 vo 객체를 만들어 주  -->
  
  <% 
-   memberDAO dao = memberDAO.getInstance();
+  memberDAO dao = memberDAO.getInstance();
+  int num = dao.confirmLogin(vo.getId(), vo.getPw()); 
  
-   if(dao.confirmId(vo.getId()) == memberDAO.MEMBER_EXISTANCE){ 
+ 
+  if(num == memberDAO.LOGIN_SUCCESS){ 
 	 
  %>
   <script>
-    alert("존재하는 아이디입니다.")
-    history.back();
-  
+    alert( "환영합니다. ");
+    document.location.href = "/aaa/index.jsp";
   </script>
   
 <%
    }else{
-	   
-	   int num = dao.insertMember(vo);
-	   
-	   if(num == memberDAO.JOIN_SUCCESS){
-		   %>
-		   
-		   <script>
-		   alert ("회원 가입을 축하합니다.")
-		   document.location.href = "/aaa";
-		   </script>
-		   
-	<% }else{
-		   
-	%> <script>
-		 alert("회원 가입 실패 ");
-		 document.location.href = "/aaa";
-		 
-		 </script>
-		   
-	  <%} 
+	   if(num == memberDAO.LOGIN_FAIL_PW){
+%>
+        <script>
+           alert("비밀번호가 잘못되었습니다. 다시 입력해주세요");
+           history.back();
+        </script>
+  
+<%      }else { %>
+         <script >
+            alert("로그인에 실패했습니다.")
+            history.back();
+         </script>
+	
+<%      } 
+	  
    }
 
 %>

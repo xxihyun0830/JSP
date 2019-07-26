@@ -34,6 +34,7 @@
     })
     </script>
     
+    <!-- 회원가입의 submit이 연결되는 파일 -->
     <script src="../js/member.js">
     </script>
 </head>
@@ -50,7 +51,7 @@
     
    </tr>
    <tr align = "center">
-     <td> ID </td>
+     <td button > ID </td>
      <td colspan = "4"> <input type = "text" name = "id"> </td> 
      
    </tr>
@@ -73,6 +74,7 @@
    <tr align = "center">
      <td colspan = "5"> 
        <input type = "button" value = "Join" onclick = "infoConfirm()">
+                                               <!-- member.js 로 넘어감/ submit을 받음  -->
        
       </td>
    </tr>

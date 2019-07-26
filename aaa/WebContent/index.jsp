@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-idth, initial-scale=1">
    
 
-    <title>Welcome to Lovelyz World</title>
+    <title>Welcome to BIGBANG</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -56,10 +56,10 @@
 
                      
                         <div class="carousel-inner">
-                            <div class="item">
+                            <div class="item active" >
                                 <img class="img-responsive img-full"  src="img/A.jpg">
                             </div>
-                            <div class="item active">
+                            <div class = "item">
                                 <img class="img-responsive img-full"  src="img/M.jpg">
                             </div>
                             
