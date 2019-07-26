@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import board.service.BoardContentService;
 import board.service.BoardListService;
 import board.service.IBoardService;
 import board.service.BoardWriteService;

@@ -22,7 +22,8 @@ public class boardDAO {
 	//------------------------------여기까지 DAO 기본 생성--------------------------//
 	
 	//게시판 전체 목록 
-	public ArrayList<boardVO> getList(boardVO vo) {
+	// 게시판 첫 홈화면 
+	public ArrayList<boardVO> getList() {
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;

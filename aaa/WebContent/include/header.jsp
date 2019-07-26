@@ -27,7 +27,7 @@
                         <a href="/aaa/member/member.jsp">Member</a>
                     </li>
                     <li>
-                        <a href="/aaa/board/board_list.jsp">BOARD</a>
+                        <a href="/aaa/Boardproj/board_list.jsp">BOARD</a>
                     </li>
                     <li>
                         <a href="/aaa/login_members/login_form.jsp">LOGIN</a>
